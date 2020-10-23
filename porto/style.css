@@ -11,13 +11,14 @@ html {
     scroll-behavior: smooth;
 }
 
-/* navbar-nb styling */
 
-.max-width {
+.max-width, .social-share {
     max-width: 1300px;
     padding: 0px 80px;
     margin: auto;
 }
+
+/* navbar-nb styling */
 
 .navbar-nb {
     position: fixed;
@@ -93,7 +94,8 @@ html {
     font-family: 'Ubuntu', 'sans-serif';
 }
 
-.home .max-width {
+.home .max-width, 
+.home .social-share {
     margin: auto 0 auto 40px;
 }
 
@@ -134,10 +136,38 @@ html {
     color: crimson;
 }
 
+.social-share {
+    position: absolute;
+    align-self: flex-end;
+    margin: auto;
+}
+
+.social-share ul li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-share ul li a {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.logo-kontak {
+    width: 25px;
+}
+
+.logo-git {
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1px;
+}
+
 /* section styling */
 
 section {
-    padding: 80px 0;
+    padding: 65px 0;
 }
 
 section .title {
@@ -356,7 +386,8 @@ footer .footer-bawah {
 /* responsive media query start */
 
 @media (max-width: 1300px) {
-    .home .max-width {
+    .home .max-width,
+    .home .social-share {
         margin-left: 0px;
     }
 }
@@ -369,7 +400,7 @@ footer .footer-bawah {
 }
 
 @media (max-width: 991px) {
-    .max-width {
+    .max-width, .social-share {
         padding: 0 50px;
     }
 }
@@ -423,7 +454,7 @@ footer .footer-bawah {
         padding: 8px 27px;
     }
 
-    .max-width {
+    .max-width, .social-share {
         max-width: 800px;
     }
 
@@ -448,7 +479,7 @@ footer .footer-bawah {
 }
 
 @media (max-width: 690px) {
-    .max-width {
+    .max-width, .social-share {
         padding: 0 23px;
     }
 
@@ -462,7 +493,6 @@ footer .footer-bawah {
 
     .home .home-content a {
         font-size: 16px;
-        /* padding: 6px 24px; */
     }
 
     .services .serv-content .card {
@@ -485,6 +515,6 @@ footer .footer-bawah {
     }
     
     .home .home-content .text-3 {
-        font-size: 27px;
+        font-size: 25px;
     } 
 }
